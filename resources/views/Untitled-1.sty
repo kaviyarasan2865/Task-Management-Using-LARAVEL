@@ -1,0 +1,192 @@
+
+Output :
+***** sort lowest price to high  ****
+menu items :
+1.{title}
+2.varients if required = 1:
+* {title}
+*option name - {price}
+*option name - {price}
+*option name - {price}
+
+3.varients if required = 0,
+
+*option name - {price}
+*option name - {price}
+*option name - {price}
+
+4. Addons :
+*{name} - {price}
+*{name} - {price}
+*{name} - {price}
+
+
+Menu items :
+Pizza
+test
+opt 3 - $20
+opt 1 - $20
+
+
+================
+
+
+/* Indexed array */
+$array = [1,2,3,4,5];
+
+/* Associative array */
+$array1 = [
+    "name"=>"ranjith",
+    "age" =>15
+];
+/* Multi dimensional array */
+$array2 = [
+    "name"=>"ranjith",
+    "age" =>15,
+    "data" => [
+        "id" =>1,
+        "title" => "test"
+    ]
+];
+
+$object = new \stdClass();
+$object->name = "ranjith";
+$object->age = 15;
+
+$array1['detail'] =  new \stdClass();
+$array1['detail']->name = "test";
+
+$array1['object1']['name'][0]['age'] = 18;
+$array1['object1']['name'][0]['gender'] = "male";
+$array1['object1']['name'][1]['age'] = 20;
+$array1['object1']['name'][1]['gender'] = "female";
+// echo $array1['object1']['name'][0]['age'];
+// exit;
+
+
+
+
+/* array creation */
+$data = new \stdClass;
+$data->store_id = "053482a9-4d0d-4132-bc44-1c405c832c54";
+$data->Service_tax=5;
+$data->discount_type="fixed";
+$data->discount=0;
+$data->package_price=10;
+$data->convenience_fee=10;
+$data->total_price=100;
+$data->total_qauntity=2;
+
+/*cart items-1*/
+$data->cart_items[0] =  new \stdClass;
+$data->cart_items[0]->id = 1;
+$data->cart_items[0]->quantity = 4;
+$data->cart_items[0]->price=2000;
+
+$data->cart_items[0]->variations[0]= new \stdClass;
+$data->cart_items[0]->variations[0]->id="c1803e41-ac54-4a1d-829e-252c6cca3736";
+$data->cart_items[0]->variations[0]->title="test";
+$data->cart_items[0]->variations[0]->is_required=0;
+
+$data->cart_items[0]->variations[0]->option_name[0]= new \stdClass;
+$data->cart_items[0]->variations[0]->option_name[0]->id="416939ec-b0ce-4725-8382-a13e7bb9fcd0";
+$data->cart_items[0]->variations[0]->option_name[0]->name="opt 3";
+$data->cart_items[0]->variations[0]->option_name[0]->price=12;
+
+$data->cart_items[0]->variations[0]->option_name[1]= new \stdClass;
+$data->cart_items[0]->variations[0]->option_name[1]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[0]->variations[0]->option_name[1]->name="opt 2";
+$data->cart_items[0]->variations[0]->option_name[1]->price=12;
+
+$data->cart_items[0]->variations[0]->option_name[1]= new \stdClass;
+$data->cart_items[0]->variations[0]->option_name[1]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[0]->variations[0]->option_name[1]->name="opt 1";
+$data->cart_items[0]->variations[0]->option_name[1]->price=12;
+
+$data->cart_items[0]->toppings[0] =new \stdClass;
+$data->cart_items[0]->toppings[0]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[0]->toppings[0]->name="tp2";
+$data->cart_items[0]->toppings[0]->price=12;
+
+$data->cart_items[0]->toppings[1] =new \stdClass;
+$data->cart_items[0]->toppings[1]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[0]->toppings[1]->name="tp1";
+$data->cart_items[0]->toppings[1]->price=12;
+
+
+/*cart items-1*/
+
+$data->cart_items[1] =  new \stdClass;
+$data->cart_items[1]->id = 1;
+$data->cart_items[1]->quantity = 4;
+$data->cart_items[1]->price=2000;
+
+$data->cart_items[1]->variations[0]= new \stdClass;
+$data->cart_items[1]->variations[0]->id="c1803e41-ac54-4a1d-829e-252c6cca3736";
+$data->cart_items[1]->variations[0]->title="test";
+$data->cart_items[1]->variations[0]->is_required=0;
+
+$data->cart_items[1]->variations[0]->option_name[0]= new \stdClass;
+$data->cart_items[1]->variations[0]->option_name[0]->id="416939ec-b0ce-4725-8382-a13e7bb9fcd0";
+$data->cart_items[1]->variations[0]->option_name[0]->name="opt 3";
+$data->cart_items[1]->variations[0]->option_name[0]->price=12;
+
+$data->cart_items[1]->variations[0]->option_name[1]= new \stdClass;
+$data->cart_items[1]->variations[0]->option_name[1]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[1]->variations[0]->option_name[1]->name="opt 2";
+$data->cart_items[1]->variations[0]->option_name[1]->price=12;
+
+$data->cart_items[1]->variations[0]->option_name[1]= new \stdClass;
+$data->cart_items[1]->variations[0]->option_name[1]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[1]->variations[0]->option_name[1]->name="opt 1";
+$data->cart_items[1]->variations[0]->option_name[1]->price=12;
+
+$data->cart_items[1]->toppings[0] =new \stdClass;
+$data->cart_items[1]->toppings[0]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[1]->toppings[0]->name="tp2";
+$data->cart_items[1]->toppings[0]->price=12;
+
+$data->cart_items[1]->toppings[1] =new \stdClass;
+$data->cart_items[1]->toppings[1]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[1]->toppings[1]->name="tp1";
+$data->cart_items[1]->toppings[1]->price=12;
+
+
+/*2*/
+$data->cart_items[1] =  new \stdClass;
+$data->cart_items[1]->id = 1;
+$data->cart_items[1]->quantity = 4;
+$data->cart_items[1]->price=2000;
+
+$data->cart_items[1]->variations[0]= new \stdClass;
+$data->cart_items[1]->variations[0]->id="c1803e41-ac54-4a1d-829e-252c6cca3736";
+$data->cart_items[1]->variations[0]->title="test";
+$data->cart_items[1]->variations[0]->is_required=0;
+
+$data->cart_items[1]->variations[0]->option_name[0]= new \stdClass;
+$data->cart_items[1]->variations[0]->option_name[0]->id="416939ec-b0ce-4725-8382-a13e7bb9fcd0";
+$data->cart_items[1]->variations[0]->option_name[0]->name="opt 3";
+$data->cart_items[1]->variations[0]->option_name[0]->price=12;
+
+$data->cart_items[1]->variations[0]->option_name[1]= new \stdClass;
+$data->cart_items[1]->variations[0]->option_name[1]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[1]->variations[0]->option_name[1]->name="opt 2";
+$data->cart_items[1]->variations[0]->option_name[1]->price=12;
+
+$data->cart_items[1]->variations[0]->option_name[1]= new \stdClass;
+$data->cart_items[1]->variations[0]->option_name[1]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[1]->variations[0]->option_name[1]->name="opt 1";
+$data->cart_items[1]->variations[0]->option_name[1]->price=12;
+
+$data->cart_items[1]->toppings[0] =new \stdClass;
+$data->cart_items[1]->toppings[0]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[1]->toppings[0]->name="tp2";
+$data->cart_items[1]->toppings[0]->price=12;
+
+$data->cart_items[1]->toppings[1] =new \stdClass;
+$data->cart_items[1]->toppings[1]->id="240ad026-e23d-4def-90a6-cf2e28b58c2f";
+$data->cart_items[1]->toppings[1]->name="tp1";
+$data->cart_items[1]->toppings[1]->price=12;
+
+print_r($data);
+exit;
